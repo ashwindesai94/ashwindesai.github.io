@@ -74,3 +74,20 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card a:hover {
+  opacity: 0.95;
+}
+
+iframe {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}

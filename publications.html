@@ -1,13 +1,82 @@
-<!DOCTYPE html>
+# Create final publications.html with DOI links included
+
+publications_doi_html = """<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Publications</title></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | Dr. B.M. Ashwin Desai</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>Selected Publications</h1>
-  <ul>
-    <li>Quantum Dots for Biomedical Applications, JBRHA, 2024</li>
-    <li>Soil Electrical Properties, IEEE Trans EMC, 2022</li>
-    <li>LIBS for Insulation Diagnostics, INAE Letters, 2018</li>
-    <li><a href="https://scholar.google.com/citations?user=ZREbpkAAAAAJ">Full list on Google Scholar</a></li>
-  </ul>
+  <header>
+    <div class="container">
+      <h1>Publications</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="highlight-section">
+    <div class="container">
+      <h2>Recent Publications (2024–2025)</h2>
+      <ul class="pub-list">
+        <li>
+          <strong>Prediction of Novel CXCR7 Inhibitors Using QSAR Modeling and Validation via Molecular Docking</strong><br>
+          <em>B.M.A. Desai, M. Sudha, S. Ghosh, P. Biswas</em><br>
+          <a href="https://ieeexplore.ieee.org/abstract/document/10863533" target="_blank">DOI Link</a>
+        </li>
+        <li>
+          <strong>Multi-Ligand Simultaneous Docking Analysis of Moringa Oleifera Phytochemicals Reveals Enhanced BCL-2 Inhibition via Synergistic Action</strong><br>
+          <em> A. Saha, B.M.A. Desai and  P. Biswas</em><br>
+          <a href="https://ieeexplore.ieee.org/abstract/document/10875829" target="_blank">DOI Link</a>
+        </li>
+        <li>
+          <strong>Enhancing Protein Recovery from Peanut Meal: High-Voltage Electrical Discharge as an Efficient and Green Pretreatment Method</strong><br>
+          <em> B. Sridhar, P. Biswas and B.M.A. Desai,</em><br>
+          <a href="https://ieeexplore.ieee.org/abstract/document/10875830" target="_blank">DOI Link</a>
+        </li>
+        <li>
+          <strong>Quantum Dots as Functional Nanosystems for Enhanced Biomedical Applications</strong><br>
+          <em>P. Biswas, A. Saha, B. Sridhar, A. Patel and B.M.A. Desai, </em><br>
+          <a href="https://www.biolifesas.org/EN/10.23812/j.biol.regul.homeost.agents.20243803.145" target="_blank">Journal Link</a>
+        </li>
+        <li>
+          <strong>A Method and System for Green Extraction of Protein from Peanut Meal</strong><br>
+          <em>B.M.A. Desai, P. Biswas, B. Sridhar</em><br>
+          Indian Patent Application No. 202541000961, 2025.
+        </li>
+      </ul>
+
+      <p style="margin-top: 20px;">🔗 For additional publications, visit:  
+        <a href="https://scholar.google.com/citations?user=ZREbpkAAAAAJ&hl=en" target="_blank">Google Scholar</a> or  
+        <a href="https://www.researchgate.net/profile/Ashwin-Desai-2" target="_blank">ResearchGate</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dr. B.M. Ashwin Desai</p>
+    </div>
+  </footer>
+
+  <style>
+    .pub-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .pub-list li {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  </style>
 </body>
 </html>
+
