@@ -91,3 +91,50 @@ iframe {
   margin-bottom: 15px;
   border-radius: 8px;
 }
+
+
+.hero-banner {
+  background-color: #4ea397; /* or your brand green */
+  padding: 40px 20px;
+  color: white;
+}
+
+.banner-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* responsive support */
+}
+
+.banner-text {
+  max-width: 65%;
+}
+
+.banner-image img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+}
+
+.hero-banner {
+  position: relative;
+  background-color: #4ea397;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.floating-profile {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+
+.floating-profile img {
+  width: 160px;
+  border-radius: 50%;
+  border: 4px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
