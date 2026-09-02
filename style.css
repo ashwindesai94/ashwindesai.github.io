@@ -543,6 +543,40 @@ footer a:hover {
   color: var(--accent);
 }
 
+.pub-faq {
+  margin: 0 0 32px;
+  padding: 4px 0 8px;
+  border-top: 1px solid rgba(28, 28, 26, 0.12);
+  border-bottom: 1px solid rgba(28, 28, 26, 0.12);
+}
+
+.faq-item {
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(28, 28, 26, 0.12);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.faq-item p {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.faq-item a {
+  color: var(--accent);
+}
+
 .pub-links a {
   color: var(--accent);
   text-decoration: none;
