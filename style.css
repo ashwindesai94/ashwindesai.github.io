@@ -530,6 +530,19 @@ footer a:hover {
   margin: 0 0 12px;
 }
 
+.pub-keyfinding {
+  color: var(--ink);
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+  padding: 8px 14px;
+  border-left: 3px solid var(--accent);
+  background: rgba(92, 42, 42, 0.06);
+}
+
+.pub-keyfinding strong {
+  color: var(--accent);
+}
+
 .pub-links a {
   color: var(--accent);
   text-decoration: none;
