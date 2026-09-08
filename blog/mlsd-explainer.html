@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What is multi-ligand simultaneous docking (MLSD)? A plain-language explainer on how docking two compounds at once reveals synergistic drug combinations, with results from four studies spanning BCL-2, AKT-1, WWP1, and Alzheimer's BACE1.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ashwindesai94.github.io/ashwindesai.github.io/blog/mlsd-explainer.html">
+  <title>What Is Multi-Ligand Simultaneous Docking? | Dr. BM Ashwin Desai</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script data-goatcounter="https://ashwindesai.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is Multi-Ligand Simultaneous Docking (MLSD)? A Guide to How Combination Drug Discovery Actually Works",
+    "description": "A plain-language explainer on multi-ligand simultaneous docking (MLSD), how it differs from single-ligand molecular docking, and what it revealed across four studies on BCL-2, AKT-1, WWP1, and Alzheimer's BACE1.",
+    "datePublished": "2026-09-08",
+    "dateModified": "2026-09-08",
+    "author": {
+      "@type": "Person",
+      "name": "BM Ashwin Desai",
+      "url": "https://ashwindesai94.github.io/ashwindesai.github.io/",
+      "sameAs": "https://orcid.org/0000-0002-4144-6266"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "BM Ashwin Desai"
+    },
+    "mainEntityOfPage": "https://ashwindesai94.github.io/ashwindesai.github.io/blog/mlsd-explainer.html",
+    "keywords": ["Multi-ligand simultaneous docking", "MLSD", "Molecular docking", "Drug synergy", "BCL-2", "AKT-1", "WWP1", "BACE1", "Alzheimer's disease"],
+    "citation": [
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Computational Analysis using Multi-ligand Simultaneous Docking of Withaferin A and Garcinol Reveals Enhanced BCL-2 and AKT-1 Inhibition",
+        "sameAs": "https://doi.org/10.1109/ICE63309.2025.10984324"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Multi-Ligand Simultaneous Docking Analysis of Moringa Oleifera Phytochemicals Reveals Enhanced BCL-2 Inhibition via Synergistic Action",
+        "sameAs": "https://doi.org/10.1109/iBioMed62485.2024.10875829"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Multi-ligand simultaneous docking of Carica papaya leaf phytochemicals, Carpaine and Rutin reveal multi-mechanism inhibition of cancer proteins, BCL-2 and WWP1",
+        "sameAs": "https://doi.org/10.1016/j.phyplu.2025.100829"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Advancing Alzheimer's disease treatment: Synergistic ligand combinations targeting BACE1 through multi-ligand simultaneous docking",
+        "sameAs": "https://doi.org/10.36922/an025190052"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is multi-ligand simultaneous docking (MLSD)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MLSD is a computational docking technique that places two or more ligands into a protein's binding pocket at the same time, instead of one at a time. This captures cooperative effects between the ligands — additive, allosteric, or synergistic binding — that standard single-ligand docking cannot detect, because it only ever scores one molecule against the target in isolation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is MLSD different from regular molecular docking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard molecular docking predicts how a single compound binds a single target and reports one binding affinity. MLSD docks a combination of compounds into the same pocket simultaneously and evaluates the combined system, revealing binding affinities that can be substantially stronger than any of the individual ligands scored alone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What has MLSD found in cancer drug discovery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Across several studies, MLSD combinations exceeded the binding affinity of commercial single-agent inhibitors: Withaferin A with Garcinol reached -13.74 kcal/mol against AKT-1, nearly double the affinity of melatonin; Moringa oleifera compounds reached -14.96 kcal/mol against BCL-2, surpassing venetoclax; and Carpaine with Rutin reached -15.59 kcal/mol against WWP1, an effect that intensified further when combined with the clinical drug bortezomib."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can MLSD be applied outside cancer research?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In a 2025 study, MLSD was applied for the first time to Alzheimer's disease drug discovery, screening over 15,000 candidate molecules against the BACE1 enzyme. Combinations reached binding affinities of -19.90 to -17.67 kcal/mol, well beyond any single compound tested, suggesting combination therapy strategies may also apply to neurodegenerative disease targets."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="site-nav">
+    <div class="container">
+      <a href="../index.html" class="brand">Dr. BM Ashwin Desai</a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../research.html">Research</a>
+        <a href="../publications.html">Publications</a>
+        <a href="index.html" class="active">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <article class="blog-post">
+    <div class="container">
+      <a href="index.html" class="back-to-blog">&larr; Back to Blog</a>
+      <h1>What Is Multi-Ligand Simultaneous Docking? A Guide to How Combination Drug Discovery Actually Works</h1>
+      <p class="blog-meta">September 2026 · Ashwin Desai</p>
+
+      <p>Most molecular docking studies ask a simple question: how well does this one molecule fit into this one protein pocket? That question has driven decades of computational drug discovery, but it misses something increasingly important in modern medicine — most effective therapies aren't single molecules acting alone. They're combinations, and combinations can behave very differently from the sum of their parts.</p>
+
+      <p><strong>Multi-ligand simultaneous docking (MLSD)</strong> is a computational technique built to answer the harder question: what happens when two or more compounds occupy a binding pocket at the same time? Across four of our studies — spanning cancer targets and, more recently, Alzheimer's disease — the answer has consistently been that combinations can bind more tightly than any single compound, including established commercial drugs.</p>
+
+      <h2>How MLSD differs from standard docking</h2>
+      <p>Conventional molecular docking scores one ligand against one target and produces one binding affinity, typically expressed in kcal/mol (a more negative number means tighter, more favorable binding). This is useful, but it treats every candidate compound as if it will act in isolation — which is rarely how real pharmacology works, especially for compounds derived from natural plant extracts that contain dozens of active phytochemicals simultaneously.</p>
+      <p>MLSD instead docks multiple ligands into the same pocket at once and evaluates the resulting complex as a system. This surfaces three distinct patterns:</p>
+      <ul>
+        <li><strong>Additive effects</strong> — ligands bind at distinct, non-overlapping regions within the same pocket, each contributing independently to overall stability.</li>
+        <li><strong>Allosteric effects</strong> — one ligand binding at a secondary site changes the protein's conformation in a way that improves the other ligand's binding at the primary site.</li>
+        <li><strong>Synergistic effects</strong> — the combined binding affinity substantially exceeds what either ligand achieves alone, sometimes even exceeding commercial single-agent drugs.</li>
+      </ul>
+
+      <h2>Case 1: Withaferin A and Garcinol against BCL-2 and AKT-1</h2>
+      <p>In our first application of MLSD, we tested Withaferin A (from Ashwagandha) and Garcinol (from Kokum) — two phytochemicals long used in traditional medicine — against two cancer-associated proteins. Docked together, they reached a BCL-2 binding affinity of −11.88 ± 0.12 kcal/mol, exceeding the commercial inhibitor venetoclax (−9.73 ± 0.1 kcal/mol). Against AKT-1, the combination reached −13.74 ± 0.08 kcal/mol — nearly double the affinity of melatonin (−7.24 ± 0.06 kcal/mol), a known AKT-1 inhibitor.</p>
+      <p><a href="../publications.html#computational-drug-discovery">Read the full study →</a> (<a href="https://doi.org/10.1109/ICE63309.2025.10984324" target="_blank" rel="noopener">DOI</a>)</p>
+
+      <h2>Case 2: Moringa oleifera phytochemicals against BCL-2</h2>
+      <p>Moringa oleifera leaf extract contains dozens of bioactive compounds. Using MLSD, we found that apigenin, hesperetin, and niazimicin A bound BCL-2 together with an affinity of −14.96 kcal/mol — again surpassing venetoclax. This was the first application of MLSD specifically to a plant extract's full phytochemical profile, rather than two isolated compounds.</p>
+      <p><a href="../publications.html#computational-drug-discovery">Read the full study →</a> (<a href="https://doi.org/10.1109/iBioMed62485.2024.10875829" target="_blank" rel="noopener">DOI</a>)</p>
+
+      <h2>Case 3: Carpaine and Rutin against BCL-2 and WWP1 — two mechanisms at once</h2>
+      <p>This study, published in <em>Phytomedicine Plus</em>, is where MLSD revealed something more nuanced: the same two compounds acted through <em>different</em> mechanisms depending on the target. Against BCL-2, Carpaine and Rutin showed an additive effect, binding at distinct regions of the same pocket to reach −13.13 ± 0.08 kcal/mol, again beating venetoclax. Against WWP1, the effect was allosteric — Carpaine bound near one site while Rutin bound near another, and their interaction increased Carpaine's effective binding affinity to −15.59 ± 0.39 kcal/mol. When Rutin was further combined with the clinical drug bortezomib, the interaction with WWP1 became more strongly synergistic still, suggesting a plant-compound-plus-clinical-drug combination strategy.</p>
+      <p><a href="../publications.html#computational-drug-discovery">Read the full study →</a> (<a href="https://doi.org/10.1016/j.phyplu.2025.100829" target="_blank" rel="noopener">DOI</a>)</p>
+
+      <h2>Case 4: A first application to Alzheimer's disease</h2>
+      <p>Every prior MLSD study we'd run was in oncology. In 2025, we applied the same method to a very different problem: Alzheimer's disease, where no disease-halting therapy currently exists and BACE1-targeting drugs have struggled with side effects and insufficient efficacy. We screened 15,641 small molecules with known activity against BACE1, identifying five with strong individual binding affinities (−11 kcal/mol or better). Four combinations of these — including CHEMBL4078427 paired with CHEMBL3656158 and the clinical candidate lanabecestat — reached MLSD binding affinities of −19.90 to −17.67 kcal/mol, far exceeding any single-ligand result. Molecular dynamics simulations confirmed the combined complexes were more stable than single-ligand binding, supporting combination therapy as a viable strategy against BACE1.</p>
+      <p><a href="../publications.html#computational-drug-discovery">Read the full study →</a> (<a href="https://doi.org/10.36922/an025190052" target="_blank" rel="noopener">DOI</a> · <a href="https://arxiv.org/abs/2609.04301" target="_blank" rel="noopener">arXiv preprint</a>)</p>
+
+      <h2>What this means for drug discovery</h2>
+      <p>Across four independent MLSD studies and four different disease targets, one pattern holds: combinations of compounds — whether two plant-derived phytochemicals, or a natural compound paired with a clinical drug — can consistently outperform single-agent binding affinity, sometimes by a wide margin. As computational screening pipelines mature, MLSD offers a way to identify these combination effects computationally before committing to the far more expensive process of experimental combination testing, narrowing the search space for synergistic drug pairs across both oncology and, as our most recent work shows, neurodegenerative disease.</p>
+
+      <blockquote>If you're working on combination therapy strategies, multi-target inhibitors, or phytochemical drug discovery and want to discuss MLSD methodology, <a href="../contact.html">get in touch</a>.</blockquote>
+
+      <div class="citation-list">
+        <h3>Papers referenced in this post</h3>
+        <ol>
+          <li>Biswas, P., Mathur, D., Dinesh, J., Dinesh, H.K., <strong>Desai, B.M.A.</strong> (2025). Computational Analysis using Multi-ligand Simultaneous Docking of Withaferin A and Garcinol Reveals Enhanced BCL-2 and AKT-1 Inhibition. <em>ICE 2025</em>. <a href="https://doi.org/10.1109/ICE63309.2025.10984324" target="_blank" rel="noopener">https://doi.org/10.1109/ICE63309.2025.10984324</a></li>
+          <li>Saha, A., <strong>Desai, B.M.A.</strong>, Biswas, P. (2024). Multi-Ligand Simultaneous Docking Analysis of Moringa Oleifera Phytochemicals Reveals Enhanced BCL-2 Inhibition via Synergistic Action. <em>IBIOMED 2024</em>. <a href="https://doi.org/10.1109/iBioMed62485.2024.10875829" target="_blank" rel="noopener">https://doi.org/10.1109/iBioMed62485.2024.10875829</a></li>
+          <li>Sudha, M., Saha, A., <strong>Desai, B.M.A.</strong>, Mhashal, A.R., Biswas, P. (2025). Multi-ligand simultaneous docking of Carica papaya leaf phytochemicals, Carpaine and Rutin reveal multi-mechanism inhibition of cancer proteins, BCL-2 and WWP1. <em>Phytomedicine Plus</em>. <a href="https://doi.org/10.1016/j.phyplu.2025.100829" target="_blank" rel="noopener">https://doi.org/10.1016/j.phyplu.2025.100829</a></li>
+          <li>Biswas, P., Shanbhog, S., Sudha, M., <strong>Desai, B.M.A.</strong> (2025). Advancing Alzheimer's disease treatment: Synergistic ligand combinations targeting BACE1 through multi-ligand simultaneous docking. <em>Advanced Neurology</em>. <a href="https://doi.org/10.36922/an025190052" target="_blank" rel="noopener">https://doi.org/10.36922/an025190052</a></li>
+        </ol>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Dr. BM Ashwin Desai</p>
+    </div>
+  </footer>
+</body>
+</html>

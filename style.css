@@ -682,3 +682,116 @@ footer a:hover {
   .cards .card { border-right: none !important; padding-left: 0 !important; padding-right: 0 !important; border-top: 1px solid var(--rule); }
   .cards .card:first-child { border-top: none; }
 }
+
+/* Blog */
+
+.blog-list {
+  padding: 48px 0 64px;
+}
+
+.blog-card {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.blog-card:first-child {
+  padding-top: 0;
+}
+
+.blog-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.blog-card h2 a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.blog-card h2 a:hover {
+  color: var(--accent);
+}
+
+.blog-meta {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+  font-style: italic;
+}
+
+.blog-card p.blog-excerpt {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.blog-post {
+  padding: 8px 0 64px;
+}
+
+.blog-post .container {
+  max-width: 760px;
+}
+
+.blog-post h1 {
+  font-size: 2.1rem;
+  margin-bottom: 8px;
+}
+
+.blog-post .blog-meta {
+  margin-bottom: 32px;
+}
+
+.blog-post h2 {
+  font-size: 1.4rem;
+  margin-top: 40px;
+}
+
+.blog-post p {
+  margin: 0 0 18px;
+}
+
+.blog-post ul, .blog-post ol {
+  margin: 0 0 18px;
+  padding-left: 24px;
+}
+
+.blog-post li {
+  margin-bottom: 8px;
+}
+
+.blog-post blockquote {
+  margin: 24px 0;
+  padding: 4px 20px;
+  border-left: 3px solid var(--accent);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.blog-post .citation-list {
+  background: rgba(92, 42, 42, 0.04);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin: 32px 0;
+}
+
+.blog-post .citation-list h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.blog-post .citation-list ol {
+  margin-bottom: 0;
+}
+
+.blog-post .citation-list li {
+  margin-bottom: 10px;
+  font-size: 0.92rem;
+}
+
+.back-to-blog {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
