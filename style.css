@@ -767,6 +767,32 @@ footer a:hover {
   font-style: italic;
 }
 
+.blog-post pre {
+  background: #2b2622;
+  color: #f0ede6;
+  padding: 16px 20px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 16px 0 24px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.blog-post pre code {
+  font-family: 'SF Mono', 'Consolas', 'Menlo', monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.blog-post .code-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 24px 0 4px;
+}
+
 .blog-post .citation-list {
   background: rgba(92, 42, 42, 0.04);
   border: 1px solid var(--rule);
