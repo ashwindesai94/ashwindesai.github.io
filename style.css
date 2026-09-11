@@ -793,6 +793,14 @@ footer a:hover {
   margin: 24px 0 4px;
 }
 
+.blog-post .img-caption {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+  margin: -14px 0 24px;
+}
+
 .blog-post .citation-list {
   background: rgba(92, 42, 42, 0.04);
   border: 1px solid var(--rule);
