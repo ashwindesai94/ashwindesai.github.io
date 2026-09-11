@@ -18,6 +18,7 @@
     "@type": "BlogPosting",
     "headline": "Building Your Persistent Second Brain: An AI-Assisted Research Workflow",
     "description": "A practical system for giving an AI assistant persistent memory across a research project: one root brain, two project templates, a literature pipeline, and four reusable skills built on Claude Code and Obsidian.",
+    "image": "https://ashwindesai94.github.io/ashwindesai.github.io/AIbrain1.png",
     "datePublished": "2026-09-11",
     "dateModified": "2026-09-11",
     "author": {
@@ -96,13 +97,17 @@
       <h1>Building Your Persistent Second Brain: An AI-Assisted Research Workflow</h1>
       <p class="blog-meta">September 2026 · Ashwin Desai</p>
 
+      <img src="../AIbrain1.png" alt="A researcher's laptop connected to a networked second brain" style="width:100%; border-radius:4px; margin: 0 0 24px;">
+
       <p>An AI with no memory is a stranger every session. Open a new chat, and it doesn't know your research area, doesn't know which of your three active manuscripts you mean by "the paper," doesn't know you already ruled out that experimental design two weeks ago. You end up re-briefing it from scratch, every time, which defeats most of the point of having an assistant at all.</p>
 
-      <p>The fix isn't a smarter model — it's persistent context the assistant can read before it does anything else. Below is a system I've been running for managing multiple research projects in parallel, built on Claude Code and Obsidian, that gives the assistant a durable memory of who you are, what you're working on, and exactly where each project stands.</p>
+      <img src="../AIbrain2.png" alt="An overwhelmed researcher surrounded by scattered papers, emails, and notes" style="width:100%; border-radius:4px; margin: 0 0 24px;">
+
+      <p>The fix isn't a smarter model - it's persistent context the assistant can read before it does anything else. Below is a system I've been running for managing multiple research projects in parallel, built on Claude Code and Obsidian, that gives the assistant a durable memory of who you are, what you're working on, and exactly where each project stands.</p>
 
       <h2>One root brain, not rigid layers</h2>
-      <p>At the top sits a single root brain: a <code>CLAUDE.md</code> and a <code>GOALS.md</code> file. This is identity-level context — your research area, your supervisor, your thesis timeline — the things that are true regardless of which specific paper you're working on this week. It isn't built once and forgotten; it's built through a structured <strong>brain-setup</strong> interview the first time, then edited over time as your focus shifts.</p>
-      <p>Project folders branch off this root. There's no separate "layer" architecture to maintain — just a root file with context that applies everywhere, and project folders that add specifics on top of it. When you open a project, the assistant reads both: who you are, and what this particular paper needs right now.</p>
+      <p>At the top sits a single root brain: a <code>CLAUDE.md</code> and a <code>GOALS.md</code> file. This is identity-level context - your research area, your supervisor, your thesis timeline - the things that are true regardless of which specific paper you're working on this week. It isn't built once and forgotten; it's built through a structured <strong>brain-setup</strong> interview the first time, then edited over time as your focus shifts.</p>
+      <p>Project folders branch off this root. There's no separate "layer" architecture to maintain - just a root file with context that applies everywhere, and project folders that add specifics on top of it. When you open a project, the assistant reads both: who you are, and what this particular paper needs right now.</p>
 
       <h2>Two project types, not one generic template</h2>
       <p>A research paper and a review paper don't move through the same stages, so forcing them into one generic template means either missing stages one type needs or cluttering the other with irrelevant ones. Instead, there are two templates:</p>
@@ -129,22 +134,28 @@
       <p>The fixed shape matters more than it looks. A free-form summary is pleasant to read once and useless to search six months later when you're trying to remember which of forty papers actually addressed your specific gap. A fixed shape means every note answers the same questions in the same order, so <code>Literature Tracker.md</code> becomes a genuinely queryable table instead of a pile of loosely related notes.</p>
 
       <h2>The manuscript stays tool-agnostic</h2>
-      <p>The vault deliberately does not try to become your writing environment. It holds a pointer to wherever the manuscript actually lives, a version log, and an outline — nothing more. The writing itself happens in Overleaf, Word, or whatever you already use. This is a deliberate boundary: a knowledge-management system that tries to also be your LaTeX editor ends up doing both jobs poorly. Keeping them separate means you can adopt this system without changing how you actually write.</p>
+      <p>The vault deliberately does not try to become your writing environment. It holds a pointer to wherever the manuscript actually lives, a version log, and an outline - nothing more. The writing itself happens in Overleaf, Word, or whatever you already use. This is a deliberate boundary: a knowledge-management system that tries to also be your LaTeX editor ends up doing both jobs poorly. Keeping them separate means you can adopt this system without changing how you actually write.</p>
 
       <h2>What's deliberately left out</h2>
-      <p>This system is scoped to the actual scholarship — literature, hypotheses, experiments, drafts — not the administrative layer that surrounds a faculty position. Grant writing and teaching prep are deliberately excluded. Trying to cover everything a researcher does would dilute the parts that matter most: keeping a clear thread through a research project from open question to submitted manuscript.</p>
+      <p>This system is scoped to the actual scholarship - literature, hypotheses, experiments, drafts - not the administrative layer that surrounds a faculty position. Grant writing and teaching prep are deliberately excluded. Trying to cover everything a researcher does would dilute the parts that matter most: keeping a clear thread through a research project from open question to submitted manuscript.</p>
 
       <h2>Four skills, not a monolith</h2>
       <p>The system runs on four narrow, reusable skills rather than one do-everything assistant configuration:</p>
       <ul>
-        <li><strong>brain-setup</strong> — the structured interview that builds the root <code>CLAUDE.md</code> and <code>GOALS.md</code> the first time you set this up.</li>
-        <li><strong>new-project</strong> — scaffolds a new project folder from the Research Paper or Review Paper template, with its own stage-tracking <code>CLAUDE.md</code>.</li>
-        <li><strong>summarize-paper</strong> — runs the literature pipeline above: reads a downloaded PDF and produces the fixed-shape note plus the tracker row.</li>
-        <li><strong>weekly-update</strong> — reviews what changed across active projects and surfaces a short status summary, so you can see progress (or the lack of it) at a glance.</li>
+        <li><strong>brain-setup</strong> - the structured interview that builds the root <code>CLAUDE.md</code> and <code>GOALS.md</code> the first time you set this up.</li>
+        <li><strong>new-project</strong> - scaffolds a new project folder from the Research Paper or Review Paper template, with its own stage-tracking <code>CLAUDE.md</code>.</li>
+        <li><strong>summarize-paper</strong> - runs the literature pipeline above: reads a downloaded PDF and produces the fixed-shape note plus the tracker row.</li>
+        <li><strong>weekly-update</strong> - reviews what changed across active projects and surfaces a short status summary, so you can see progress (or the lack of it) at a glance.</li>
       </ul>
 
       <h2>Setting it up</h2>
       <p>Claude Code installs Obsidian and the Claudian plugin, and the vault opens directly in Obsidian. On first use, activate Claudian with Ctrl/Cmd+P. From there, the brain-setup interview walks you through building the root files, and every subsequent project starts with new-project rather than a blank folder.</p>
+
+      <img src="../AIbrian3.png" alt="Claude and Obsidian logos, the two tools this workflow is built on" style="width:100%; max-width:500px; display:block; margin: 0 auto 24px;">
+
+      <img src="../Aibrain4.png" alt="A researcher working calmly with organized, categorized information around them" style="width:100%; border-radius:4px; margin: 24px 0;">
+
+      <p>The payoff isn't a fancier assistant - it's the same assistant, minus the constant re-briefing. A well-kept second brain means every session starts from where you actually are in the project, not from zero.</p>
 
       <blockquote>If you're setting up a similar workflow for your own research group or want to talk through adapting this for a specific field, <a href="../contact.html">get in touch</a>.</blockquote>
     </div>
