@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A practical system for giving an AI assistant persistent memory across a research project: one root brain, two project templates, a literature pipeline, and four reusable skills built on Claude Code and Obsidian.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ashwindesai94.github.io/ashwindesai.github.io/blog/persistent-second-brain.html">
+  <title>Building Your Persistent Second Brain | Dr. BM Ashwin Desai</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script data-goatcounter="https://ashwindesai.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Building Your Persistent Second Brain: An AI-Assisted Research Workflow",
+    "description": "A practical system for giving an AI assistant persistent memory across a research project: one root brain, two project templates, a literature pipeline, and four reusable skills built on Claude Code and Obsidian.",
+    "datePublished": "2026-09-11",
+    "dateModified": "2026-09-11",
+    "author": {
+      "@type": "Person",
+      "name": "BM Ashwin Desai",
+      "url": "https://ashwindesai94.github.io/ashwindesai.github.io/",
+      "sameAs": "https://orcid.org/0000-0002-4144-6266"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "BM Ashwin Desai"
+    },
+    "mainEntityOfPage": "https://ashwindesai94.github.io/ashwindesai.github.io/blog/persistent-second-brain.html",
+    "keywords": ["AI-assisted research", "Claude Code", "Obsidian", "Research workflow", "Second brain", "Literature review", "Knowledge management"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does an AI assistant need a persistent memory system for research?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Without one, every session starts from zero: you re-explain your research area, your current project stage, and your open questions each time. A persistent second brain stores that context in files the assistant reads at the start of every session, so it picks up where the last session left off instead of treating you like a stranger."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the root brain and a project folder?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The root brain (CLAUDE.md and GOALS.md) holds identity-level context that rarely changes: your research area, supervisor, thesis timeline. Project folders branch off it, each with their own CLAUDE.md naming which stage that specific paper is in, so context is layered rather than duplicated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are there two separate project templates instead of one generic one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A research paper and a review paper move through genuinely different stages. Research Paper follows Lit Review, Hypothesis, Experiments & Data, Results & Analysis, Draft, Submission, Revision. Review Paper follows Literature Collection, Synthesis & Outline, Draft, Submission, Revision. Forcing both into one template either omits stages one type needs or adds irrelevant ones to the other."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this system replace Overleaf or Word for writing the manuscript?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, and deliberately so. The vault only holds a pointer to the manuscript, a version log, and an outline. The actual writing happens in whatever tool you already use, keeping the system tool-agnostic instead of locking your manuscript into a note-taking app."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="site-nav">
+    <div class="container">
+      <a href="../index.html" class="brand">Dr. BM Ashwin Desai</a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../research.html">Research</a>
+        <a href="../publications.html">Publications</a>
+        <a href="index.html" class="active">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <article class="blog-post">
+    <div class="container">
+      <a href="index.html" class="back-to-blog">&larr; Back to Blog</a>
+      <h1>Building Your Persistent Second Brain: An AI-Assisted Research Workflow</h1>
+      <p class="blog-meta">September 2026 · Ashwin Desai</p>
+
+      <p>An AI with no memory is a stranger every session. Open a new chat, and it doesn't know your research area, doesn't know which of your three active manuscripts you mean by "the paper," doesn't know you already ruled out that experimental design two weeks ago. You end up re-briefing it from scratch, every time, which defeats most of the point of having an assistant at all.</p>
+
+      <p>The fix isn't a smarter model — it's persistent context the assistant can read before it does anything else. Below is a system I've been running for managing multiple research projects in parallel, built on Claude Code and Obsidian, that gives the assistant a durable memory of who you are, what you're working on, and exactly where each project stands.</p>
+
+      <h2>One root brain, not rigid layers</h2>
+      <p>At the top sits a single root brain: a <code>CLAUDE.md</code> and a <code>GOALS.md</code> file. This is identity-level context — your research area, your supervisor, your thesis timeline — the things that are true regardless of which specific paper you're working on this week. It isn't built once and forgotten; it's built through a structured <strong>brain-setup</strong> interview the first time, then edited over time as your focus shifts.</p>
+      <p>Project folders branch off this root. There's no separate "layer" architecture to maintain — just a root file with context that applies everywhere, and project folders that add specifics on top of it. When you open a project, the assistant reads both: who you are, and what this particular paper needs right now.</p>
+
+      <h2>Two project types, not one generic template</h2>
+      <p>A research paper and a review paper don't move through the same stages, so forcing them into one generic template means either missing stages one type needs or cluttering the other with irrelevant ones. Instead, there are two templates:</p>
+      <ul>
+        <li><strong>Research Paper:</strong> Lit Review → Hypothesis → Experiments & Data → Results & Analysis → Draft → Submission → Revision</li>
+        <li><strong>Review Paper:</strong> Literature Collection → Synthesis & Outline → Draft → Submission → Revision</li>
+      </ul>
+      <p>Each project's own <code>CLAUDE.md</code> names its current stage explicitly. That one line is what lets a session pick up exactly where the last one left off, instead of the assistant guessing from context clues or asking you to re-explain.</p>
+
+      <h2>The literature pipeline</h2>
+      <p>Reading papers generates the most friction in any research workflow, so this is the most mechanical part of the system by design:</p>
+      <p class="code-label">Literature flow</p>
+      <pre><code>1. Download paper
+2. Rename: FirstAuthor_Year_ShortTopic.pdf
+3. Run the summarize-paper skill
+4. Skill writes a fixed-shape note:
+   - Question
+   - Method
+   - Result
+   - Relevance to hypothesis
+   - Gaps
+   - Takeaway
+5. Note auto-appends a row to Literature Tracker.md</code></pre>
+      <p>The fixed shape matters more than it looks. A free-form summary is pleasant to read once and useless to search six months later when you're trying to remember which of forty papers actually addressed your specific gap. A fixed shape means every note answers the same questions in the same order, so <code>Literature Tracker.md</code> becomes a genuinely queryable table instead of a pile of loosely related notes.</p>
+
+      <h2>The manuscript stays tool-agnostic</h2>
+      <p>The vault deliberately does not try to become your writing environment. It holds a pointer to wherever the manuscript actually lives, a version log, and an outline — nothing more. The writing itself happens in Overleaf, Word, or whatever you already use. This is a deliberate boundary: a knowledge-management system that tries to also be your LaTeX editor ends up doing both jobs poorly. Keeping them separate means you can adopt this system without changing how you actually write.</p>
+
+      <h2>What's deliberately left out</h2>
+      <p>This system is scoped to the actual scholarship — literature, hypotheses, experiments, drafts — not the administrative layer that surrounds a faculty position. Grant writing and teaching prep are deliberately excluded. Trying to cover everything a researcher does would dilute the parts that matter most: keeping a clear thread through a research project from open question to submitted manuscript.</p>
+
+      <h2>Four skills, not a monolith</h2>
+      <p>The system runs on four narrow, reusable skills rather than one do-everything assistant configuration:</p>
+      <ul>
+        <li><strong>brain-setup</strong> — the structured interview that builds the root <code>CLAUDE.md</code> and <code>GOALS.md</code> the first time you set this up.</li>
+        <li><strong>new-project</strong> — scaffolds a new project folder from the Research Paper or Review Paper template, with its own stage-tracking <code>CLAUDE.md</code>.</li>
+        <li><strong>summarize-paper</strong> — runs the literature pipeline above: reads a downloaded PDF and produces the fixed-shape note plus the tracker row.</li>
+        <li><strong>weekly-update</strong> — reviews what changed across active projects and surfaces a short status summary, so you can see progress (or the lack of it) at a glance.</li>
+      </ul>
+
+      <h2>Setting it up</h2>
+      <p>Claude Code installs Obsidian and the Claudian plugin, and the vault opens directly in Obsidian. On first use, activate Claudian with Ctrl/Cmd+P. From there, the brain-setup interview walks you through building the root files, and every subsequent project starts with new-project rather than a blank folder.</p>
+
+      <blockquote>If you're setting up a similar workflow for your own research group or want to talk through adapting this for a specific field, <a href="../contact.html">get in touch</a>.</blockquote>
+    </div>
+  </article>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Dr. BM Ashwin Desai</p>
+    </div>
+  </footer>
+</body>
+</html>
