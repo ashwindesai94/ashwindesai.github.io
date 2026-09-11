@@ -109,7 +109,7 @@
       <p>At the top sits a single root brain: a <code>CLAUDE.md</code> and a <code>GOALS.md</code> file. This holds whatever stays true no matter which paper you're working on this week - your research area, your supervisor, your thesis timeline. It isn't built once and forgotten; it's built through a structured <strong>brain-setup</strong> interview the first time, then edited over time as your focus shifts.</p>
       <p>Every project folder sits underneath this root and inherits it automatically. Open any project, and the assistant reads two things at once: the root file (who you are, what you're generally working toward) and that project's own file (what this specific paper needs right now). You never have to repeat your research area or supervisor's name in every project - it's stated once, at the root, and everything below it just has access to it.</p>
 
-      <img src="../Screenshot 2026-09-11 at 2.14.25 PM.png" alt="The root CLAUDE.md file, showing sections for research area, supervisor, and Claude's purpose at the root level" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
+      <img src="../vault-claude-root.png" alt="The root CLAUDE.md file, showing sections for research area, supervisor, and Claude's purpose at the root level" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
       <p class="img-caption">The actual root CLAUDE.md file: identity, supervisor, and thesis context, filled in once during brain-setup.</p>
 
       <h2>Two project types, not one generic template</h2>
@@ -120,9 +120,9 @@
       </ul>
       <p>Each project's own <code>CLAUDE.md</code> names its current stage explicitly. That one line is what lets a session pick up exactly where the last one left off, instead of the assistant guessing from context clues or asking you to re-explain.</p>
 
-      <img src="../Screenshot 2026-09-11 at 2.13.13 PM.png" alt="The Projects folder showing separate Paper Template and Review Template subfolders" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
+      <img src="../vault-project-templates.png" alt="The Projects folder showing separate Paper Template and Review Template subfolders" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
       <p class="img-caption">Inside 02 Projects: a Paper Template and a Review Template, each with its own stage folders.</p>
-      <img src="../Screenshot 2026-09-11 at 2.13.56 PM.png" alt="A Revision Tracker note inside a paper's 07 Revision stage folder, tracking reviewer comments round by round" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
+      <img src="../vault-revision-tracker.png" alt="A Revision Tracker note inside a paper's 07 Revision stage folder, tracking reviewer comments round by round" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
       <p class="img-caption">One stage opened up: the Revision Tracker inside 07 Revision, logging reviewer comments round by round.</p>
 
       <h2>The literature pipeline</h2>
@@ -141,13 +141,13 @@
 5. Note auto-appends a row to Literature Tracker.md</code></pre>
       <p>The fixed shape matters more than it looks. A free-form summary is pleasant to read once and useless to search six months later when you're trying to remember which of forty papers actually addressed your specific gap. A fixed shape means every note answers the same questions in the same order, so <code>Literature Tracker.md</code> becomes a genuinely queryable table instead of a pile of loosely related notes.</p>
 
-      <img src="../Screenshot 2026-09-11 at 2.14.06 PM.png" alt="The Literature Tracker table, with one row per paper showing citation key, year, tag, status, relevance score, and a one-line takeaway" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
+      <img src="../vault-literature-tracker.png" alt="The Literature Tracker table, with one row per paper showing citation key, year, tag, status, relevance score, and a one-line takeaway" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
       <p class="img-caption">Literature Tracker.md after the summarize-paper skill runs: one row per paper, added automatically.</p>
 
       <h2>The manuscript stays tool-agnostic</h2>
       <p>The vault deliberately does not try to become your writing environment. It holds a pointer to wherever the manuscript actually lives, a version log, and an outline - nothing more. The writing itself happens in Overleaf, Word, or whatever you already use. This is a deliberate boundary: a knowledge-management system that tries to also be your LaTeX editor ends up doing both jobs poorly. Keeping them separate means you can adopt this system without changing how you actually write.</p>
 
-      <img src="../Screenshot 2026-09-11 at 2.13.46 PM.png" alt="The Manuscript Link note, pointing to where the draft actually lives (Overleaf, Word, Google Docs) plus a version history log" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
+      <img src="../vault-manuscript-link.png" alt="The Manuscript Link note, pointing to where the draft actually lives (Overleaf, Word, Google Docs) plus a version history log" style="width:100%; border-radius:4px; margin: 0 0 4px; border: 1px solid rgba(28,28,26,0.12);">
       <p class="img-caption">The Manuscript Link file inside 05 Draft: a pointer and version log, not the manuscript itself.</p>
 
       <h2>Four focused skills instead of one do-everything assistant</h2>
@@ -162,7 +162,7 @@
       <h2>Setting it up</h2>
       <p>Here's the destination before the steps to get there - the Research Brain Template vault open in Obsidian, with the folder structure on the left (Research Strategy, Projects, Skills, and the root CLAUDE.md/GOALS.md/README/Setup Guide files) and the Claudian panel activated on the right, ready to take instructions:</p>
 
-      <img src="../Screenshot 2026-09-11 at 2.12.59 PM.png" alt="The Research Brain Template vault open in Obsidian with the Claudian panel activated on the right" style="width:100%; border-radius:4px; margin: 0 0 24px; border: 1px solid rgba(28,28,26,0.12);">
+      <img src="../vault-overview.png" alt="The Research Brain Template vault open in Obsidian with the Claudian panel activated on the right" style="width:100%; border-radius:4px; margin: 0 0 24px; border: 1px solid rgba(28,28,26,0.12);">
 
       <p>Claude Code installs Obsidian and the Claudian plugin, and the vault opens directly in Obsidian. On first use, activate Claudian with Ctrl/Cmd+P. From there, the brain-setup interview walks you through building the root files, and every subsequent project starts with new-project rather than a blank folder.</p>
 
