@@ -151,6 +151,29 @@
       <h2>Setting it up</h2>
       <p>Claude Code installs Obsidian and the Claudian plugin, and the vault opens directly in Obsidian. On first use, activate Claudian with Ctrl/Cmd+P. From there, the brain-setup interview walks you through building the root files, and every subsequent project starts with new-project rather than a blank folder.</p>
 
+      <p class="code-label">1. Open a terminal</p>
+      <p>Command Prompt on Windows, Terminal on Mac.</p>
+
+      <p class="code-label">2. Install Claude Code</p>
+      <p>Windows:</p>
+      <pre><code>curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd</code></pre>
+      <p>Mac:</p>
+      <pre><code>curl -fsSL https://claude.ai/install.sh | bash</code></pre>
+
+      <p class="code-label">3. Log in</p>
+      <p>Run <code>claude</code> and follow the browser login prompt.</p>
+
+      <ol style="margin-top:16px;">
+        <li>Ask Claude Code to install Obsidian for you.</li>
+        <li>Ask Claude Code to install the Claudian plugin from <a href="https://github.com/YishenTu/claudian" target="_blank" rel="noopener">github.com/YishenTu/claudian</a> into the vault's <code>.obsidian/plugins</code> folder.</li>
+        <li>Open the Research Brain Template folder in Obsidian as a vault ("Open folder as vault").</li>
+        <li>Go to Settings → Community Plugins, confirm Claudian is listed and toggled on.</li>
+        <li>Press Ctrl+P (Windows) or Cmd+P (Mac) to open the Command Palette and trigger Claudian for the first time.</li>
+        <li>Run <code>brain-setup</code> to build the root brain, then start the first project with <code>new-project</code>.</li>
+      </ol>
+
+      <p>Since this all runs through Claude Code, none of these steps are fixed in stone - you can ask it to adjust the setup, rename things, or reorganize the vault structure to fit how you actually work.</p>
+
       <img src="../AIbrian3.png" alt="Claude and Obsidian logos, the two tools this workflow is built on" style="width:100%; max-width:500px; display:block; margin: 0 auto 24px;">
 
       <img src="../Aibrain4.png" alt="A researcher working calmly with organized, categorized information around them" style="width:100%; border-radius:4px; margin: 24px 0;">
